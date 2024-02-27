@@ -1,0 +1,44 @@
+[
+    {
+        "title": "VALID IP",
+        "description": "",
+        "callback": null,
+        "image": null
+    },
+    {
+        "title": "DIRBUSTER",
+        "description": "",
+        "callback": null,
+        "image": null
+    },
+    {
+        "title": "HYDRA",
+        "description": "",
+        "callback": null,
+        "image": null
+    },
+    {
+        "title": "NMAP",
+        "description": "",
+        "callback": null,
+        "image": null
+    },
+    {
+        "title": "STEGSEEK",
+        "description": "",
+        "callback": null,
+        "image": null
+    },
+    {
+        "title": "STEGHIDE",
+        "description": "",
+        "callback": null,
+        "image": null
+    },
+    {
+        "title": "JOHN",
+        "description": "",
+        "callback": null,
+        "image": null
+    }
+]
