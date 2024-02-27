@@ -1,3 +1,4 @@
+import 'package:election_blockchain/cyber_services/views/holder.dart';
 import 'package:election_blockchain/utils/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -12,22 +13,28 @@ class MainHolder extends StatefulWidget {
 }
 
 class _MainHolderState extends State<MainHolder> {
-  final List<Map<String, dynamic>> _topics = <Map<String, dynamic>>[
-    <String, dynamic>{
-      "title": "Online Voting using BlockChain technology",
-      "description": "Try Online Voting with Blockchain Technology",
-      "picture": "blockchain.png",
-      "callback": () {},
-      "state": false,
-    },
-    <String, dynamic>{
-      "title": "CyberSecurity Services",
-      "description": "This part will cover many CyberSecurity topics including HYDRA, NMAP, ...",
-      "picture": "cybersecurity.png",
-      "callback": () {},
-      "state": false,
-    },
-  ];
+  late final List<Map<String, dynamic>> _topics;
+
+  @override
+  void initState() {
+    _topics = <Map<String, dynamic>>[
+      <String, dynamic>{
+        "title": "Online Voting using BlockChain technology",
+        "description": "Try Online Voting with Blockchain Technology",
+        "picture": "blockchain.png",
+        "callback": () {},
+        "state": false,
+      },
+      <String, dynamic>{
+        "title": "CyberSecurity Services",
+        "description": "This part will cover many CyberSecurity topics including HYDRA, NMAP, ...",
+        "picture": "cybersecurity.png",
+        "callback": () => Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => const Holder())),
+        "state": false,
+      },
+    ];
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
